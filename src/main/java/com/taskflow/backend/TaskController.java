@@ -7,7 +7,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/tasks")
-@CrossOrigin(origins = {"http://localhost:4200", "http://192.168.101.6:4200"})
+@CrossOrigin(origins = {
+        "https://taskflow.shahirjalal.dev",
+        "https://www.taskflow.shahirjalal.dev",
+        "http://localhost:4200",
+        "http://192.168.101.6:4200"
+})
 public class TaskController {
 
     @Autowired
